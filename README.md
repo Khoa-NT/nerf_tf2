@@ -1,3 +1,12 @@
+
+**NeRF With Tensorflow v2.11.***
+
+The code in [cjw531/nerf_tf2](https://github.com/cjw531/nerf_tf2) is Tensorflow 2.8, mine is 2.11.*  
+
+Below is the original README.md from the NeRF project code.
+
+<hr>
+
 # NeRF: Neural Radiance Fields
 ### [Project Page](http://tancik.com/nerf) | [Video](https://youtu.be/JuH79E8rdKc) | [Paper](https://arxiv.org/abs/2003.08934) | [Data](https://drive.google.com/drive/folders/128yBriW1IG_3NJ5Rp7APSTZsJqdJdfc1)
 [![Open Tiny-NeRF in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bmild/nerf/blob/master/tiny_nerf.ipynb)<br>
