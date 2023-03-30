@@ -1,9 +1,14 @@
 **/.ipynb_checkpoints
 **/__pycache__
+**/._* 
+**/.DS_Store
+
 *.png
 *.mp4
 *.npy
 *.npz
 *.dae
+
 data/*
 logs/*
+
