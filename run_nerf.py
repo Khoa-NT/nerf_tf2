@@ -465,7 +465,7 @@ def config_parser():
                         help='config file path')
     parser.add_argument("--expname", type=str, help='experiment name')
     parser.add_argument("--basedir", type=str, default='./logs/',
-                        help='where to store ckpts and logs')
+                        help='where to store ckpts and logs') # Log will be save at $basedir/$expname/
     parser.add_argument("--datadir", type=str,
                         default='./data/llff/fern', help='input data directory')
 
@@ -474,20 +474,24 @@ def config_parser():
                         help='layers in network')
     parser.add_argument("--netwidth", type=int, default=256,
                         help='channels per layer')
+    
     parser.add_argument("--netdepth_fine", type=int,
                         default=8, help='layers in fine network')
     parser.add_argument("--netwidth_fine", type=int, default=256,
                         help='channels per layer in fine network')
+    
     parser.add_argument("--N_rand", type=int, default=32*32*4,
                         help='batch size (number of random rays per gradient step)')
     parser.add_argument("--lrate", type=float,
                         default=5e-4, help='learning rate')
     parser.add_argument("--lrate_decay", type=int, default=250,
                         help='exponential learning rate decay (in 1000s)')
+    
     parser.add_argument("--chunk", type=int, default=1024*32,
                         help='number of rays processed in parallel, decrease if running out of memory')
     parser.add_argument("--netchunk", type=int, default=1024*64,
                         help='number of pts sent through network in parallel, decrease if running out of memory')
+    
     parser.add_argument("--no_batching", action='store_true',
                         help='only take random rays from 1 image at a time')
     parser.add_argument("--no_reload", action='store_true',

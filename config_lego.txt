@@ -1,6 +1,7 @@
 expname = lego_test
 basedir = ./logs
-datadir = ./data/nerf_synthetic/lego
+datadir = /home/khoa/workspace/Data_set/NeRF_Data/nerf_synthetic/lego
+# datadir = ./data/nerf_synthetic/lego
 dataset_type = blender
 
 half_res = True

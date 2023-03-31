@@ -3,6 +3,13 @@
 
 The code in [cjw531/nerf_tf2](https://github.com/cjw531/nerf_tf2) is Tensorflow 2.8, mine is 2.11.*  
 
+If you intend to use it, please uncomment the `datadir` setting in either `config_fern.txt ` or `config_lego.txt` to point to the default data folder.
+```
+datadir = ./data/nerf_llff_data/fern # in config_fern.txt
+datadir = ./data/nerf_synthetic/lego # in config_lego.txt
+```
+
+
 Below is the original README.md from the NeRF project code.
 
 <hr>
